@@ -1,0 +1,11 @@
+<template class="${tag.editing ? 'editing': ''}" keypress.delegate="onKeyPress(tag, $event)">
+  <div class="inner-input" contenteditable="true"
+     textcontent.two-way="tag.value"
+     click.delegate="onClick(tag, 'edit')"
+     blur.trigger="onBlur(tag, $event)"
+     focus.bind="tag.focus">
+  </div>
+  <span class="close-input" 
+    show.bind="!tag.editing" 
+    click.delegate="onClick(tag, 'delete')">x</span>
+</template>
