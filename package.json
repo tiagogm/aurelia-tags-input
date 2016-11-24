@@ -53,6 +53,13 @@
     "vinyl-paths": "^2.1.0",
     "yargs": "^4.8.1"
   },
+  "aurelia": {
+    "build": {
+      "resources": [
+        "aurelia-tags-input/aurelia-tags-input"
+      ]
+    }
+  },
   "jspm": {
     "registry": "npm",
     "main": "index",
