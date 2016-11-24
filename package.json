@@ -37,6 +37,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-bump": "^2.2.0",
     "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.3.2",
     "gulp-yuidoc": "^0.1.2",
     "isparta": "^4.0.0",
     "istanbul": "^1.0.0-alpha.2",

@@ -7,7 +7,7 @@ exports.AureliaTagsInput = undefined;
 
 var _aureliaFramework = require('aurelia-framework');
 
-require('./aurelia-tags-input.scss');
+require('./aurelia-tags-input.css');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 

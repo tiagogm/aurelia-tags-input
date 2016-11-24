@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['aurelia-framework', './aurelia-tags-input.scss'], function (_export, _context) {
+System.register(['aurelia-framework', './aurelia-tags-input.css'], function (_export, _context) {
   "use strict";
 
   var bindable, inject, computedFrom, AureliaTagsInput;
@@ -16,7 +16,7 @@ System.register(['aurelia-framework', './aurelia-tags-input.scss'], function (_e
       bindable = _aureliaFramework.bindable;
       inject = _aureliaFramework.inject;
       computedFrom = _aureliaFramework.computedFrom;
-    }, function (_aureliaTagsInputScss) {}],
+    }, function (_aureliaTagsInputCss) {}],
     execute: function () {
       _export('AureliaTagsInput', AureliaTagsInput = function () {
         function AureliaTagsInput() {

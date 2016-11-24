@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-framework', './aurelia-tags-input.scss'], function (exports, _aureliaFramework) {
+define(['exports', 'aurelia-framework', './aurelia-tags-input.css'], function (exports, _aureliaFramework) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
