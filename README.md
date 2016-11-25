@@ -1,6 +1,35 @@
-## Aurelia tags input
+# Aurelia tags input
 
-<img src="http://i.imgur.com/PLrt8IB.png" width="400">
+### An Aurelia tags input plugin
+
+<img src="demo.gif" width="400" alt="Logo"/>
+
+
+### Install
+
+`npm install aurelia-tags-input --save`
+
+### Use
+  
+```javascript
+  export async function configure(aurelia) {
+    //...
+    aurelia.use
+      //..
+      .plugin('aurelia-tags-input')
+  }
+```
+
+```html
+<aurelia-tags-input
+  tags.bind="tags"
+  on-change.bind="onTagsChanged">
+</aurelia-tags-input>
+```
+
+## Optional bindable props
+- ```tags``` - array of string to render on the input as tags
+- ```on-change``` - callback function called when tags are changed
 
 ## Building The Code
 

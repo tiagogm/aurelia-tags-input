@@ -17,5 +17,4 @@ describe('the Aurelia configuration', () => {
   it('should register a global resource', () => {
     expect(mockedConfiguration.resources).toContain('./aurelia-tags-input');
   });
-
 });

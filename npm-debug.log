@@ -1,0 +1,121 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+8 silly fetchOtherPackageData git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+9 silly cache add args [ 'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+9 silly cache add   null ]
+10 verbose cache add spec git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add   spec: 'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add      httpsUrl: 'git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add      gitUrl: 'git://github.com/TGMorais/aurelia-tags-input.git#v1.0.1',
+11 silly cache add      shortcut: 'github:TGMorais/aurelia-tags-input#v1.0.1',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/TGMorais/aurelia-tags-input/v1.0.1/package.json' } }
+12 verbose addRemoteGit caching git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+13 verbose addRemoteGit git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 via git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+15 verbose tryClone git-https-github-com-TGMorais-aurelia-tags-input-git-v1-0-1-fe4c14f0 not in flight; caching
+16 verbose correctMkdir /Users/tiagomorais/.npm/_git-remotes correctMkdir not in flight; initializing
+17 info git [ 'config', '--get', 'remote.origin.url' ]
+18 silly validateExistingRemote git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 remote.origin.url: https://github.com/TGMorais/aurelia-tags-input.git
+19 verbose validateExistingRemote git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 is updating existing cached remote /Users/tiagomorais/.npm/_git-remotes/git-https-github-com-TGMorais-aurelia-tags-input-git-v1-0-1-fe4c14f0
+20 info git [ 'fetch', '-a', 'origin' ]
+21 verbose updateRemote git fetch -a origin (https://github.com/TGMorais/aurelia-tags-input.git)
+22 verbose correctMkdir /Users/tiagomorais/.npm/_git-remotes correctMkdir not in flight; initializing
+23 verbose setPermissions git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 set permissions on /Users/tiagomorais/.npm/_git-remotes/git-https-github-com-TGMorais-aurelia-tags-input-git-v1-0-1-fe4c14f0
+24 verbose resolveHead git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 original treeish: v1.0.1
+25 info git [ 'rev-list', '-n1', 'v1.0.1' ]
+26 silly resolveHead git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 resolved treeish: eba654ac9a1950dfa71fe116ef54f84c15dced57
+27 verbose resolveHead git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 resolved Git URL: git+https://github.com/TGMorais/aurelia-tags-input.git#eba654ac9a1950dfa71fe116ef54f84c15dced57
+28 silly resolveHead Git working directory: /var/folders/mh/32ps22fn3q514l7x8h41z91r0000gp/T/npm-6340-98b8d678/git-cache-8d6b8844/eba654ac9a1950dfa71fe116ef54f84c15dced57
+29 info git [ 'clone',
+29 info git   '/Users/tiagomorais/.npm/_git-remotes/git-https-github-com-TGMorais-aurelia-tags-input-git-v1-0-1-fe4c14f0',
+29 info git   '/var/folders/mh/32ps22fn3q514l7x8h41z91r0000gp/T/npm-6340-98b8d678/git-cache-8d6b8844/eba654ac9a1950dfa71fe116ef54f84c15dced57' ]
+30 verbose cloneResolved git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 clone Cloning into '/var/folders/mh/32ps22fn3q514l7x8h41z91r0000gp/T/npm-6340-98b8d678/git-cache-8d6b8844/eba654ac9a1950dfa71fe116ef54f84c15dced57'...
+30 verbose cloneResolved done.
+31 info git [ 'checkout', 'eba654ac9a1950dfa71fe116ef54f84c15dced57' ]
+32 verbose checkoutTreeish git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 checkout Note: checking out 'eba654ac9a1950dfa71fe116ef54f84c15dced57'.
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+32 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+32 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+32 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish   git checkout -b <new-branch-name>
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish HEAD is now at eba654a... 1.0.1
+33 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+34 verbose updateSubmodules git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1 submodule update
+35 verbose addLocalDirectory /Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package.tgz not in flight; packing
+36 verbose correctMkdir /Users/tiagomorais/.npm correctMkdir not in flight; initializing
+37 verbose tar pack [ '/Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package.tgz',
+37 verbose tar pack   '/var/folders/mh/32ps22fn3q514l7x8h41z91r0000gp/T/npm-6340-98b8d678/git-cache-8d6b8844/eba654ac9a1950dfa71fe116ef54f84c15dced57' ]
+38 verbose tarball /Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package.tgz
+39 verbose folder /var/folders/mh/32ps22fn3q514l7x8h41z91r0000gp/T/npm-6340-98b8d678/git-cache-8d6b8844/eba654ac9a1950dfa71fe116ef54f84c15dced57
+40 verbose addLocalTarball adding from inside cache /Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package.tgz
+41 verbose correctMkdir /Users/tiagomorais/.npm correctMkdir not in flight; initializing
+42 verbose addRemoteGit data._from: git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1
+43 verbose addRemoteGit data._resolved: git+https://github.com/TGMorais/aurelia-tags-input.git#eba654ac9a1950dfa71fe116ef54f84c15dced57
+44 silly cache afterAdd aurelia-tags-input@1.0.1
+45 verbose afterAdd /Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package/package.json not in flight; writing
+46 verbose correctMkdir /Users/tiagomorais/.npm correctMkdir not in flight; initializing
+47 verbose afterAdd /Users/tiagomorais/.npm/aurelia-tags-input/1.0.1/package/package.json written
+48 silly install normalizeTree
+49 silly loadCurrentTree Finishing
+50 silly loadIdealTree Starting
+51 silly install loadIdealTree
+52 silly cloneCurrentTree Starting
+53 silly install cloneCurrentTreeToIdealTree
+54 silly cloneCurrentTree Finishing
+55 silly loadShrinkwrap Starting
+56 silly install loadShrinkwrap
+57 silly loadShrinkwrap Finishing
+58 silly loadAllDepsIntoIdealTree Starting
+59 silly install loadAllDepsIntoIdealTree
+60 silly rollbackFailedOptional Starting
+61 silly rollbackFailedOptional Finishing
+62 silly runTopLevelLifecycles Starting
+63 silly runTopLevelLifecycles Finishing
+64 silly install printInstalled
+65 verbose stack Error: Refusing to install aurelia-tags-input as a dependency of itself
+65 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+65 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+65 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+65 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+65 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+65 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+65 verbose stack     at Array.forEach (native)
+65 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+65 verbose stack     at Array.forEach (native)
+65 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+66 verbose cwd /Users/tiagomorais/Development/tmorais/aurelia-tags-input
+67 error Darwin 15.6.0
+68 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "git+https://github.com/TGMorais/aurelia-tags-input.git#v1.0.1" "--save"
+69 error node v6.3.0
+70 error npm  v3.10.3
+71 error code ENOSELF
+72 error Refusing to install aurelia-tags-input as a dependency of itself
+73 error If you need help, you may report this error at:
+73 error     <https://github.com/npm/npm/issues>
+74 verbose exit [ 1, true ]

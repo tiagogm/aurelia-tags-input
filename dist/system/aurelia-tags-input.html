@@ -1,15 +1,21 @@
 <template>
-  <require from="./tag-input/tag-input"></require>
+  <require from="./aurelia-tags-input.css"></require>
+  <div class="input" click.delegate="onClick()">
 
-  <template containerless repeat.for="tag of tags">
-    <tag-input
-      tag.bind="tag"
-      on-click.bind="onTagClick"
-      on-blur.bind="onTagBlur"
-      on-key-press.bind="onTagKeyPress">
-    </tag-input>
-  </template>
-  <span contenteditable="true" class="fake-edit"></span>
-  
+    <div repeat.for="tag of tags" 
+      keypress.delegate="onTagKey(tag, $event)"
+      class="aurelia-tag-input ${tag.editing ? 'editing': ''}">
+
+      <div class="inner-input" contenteditable="true"
+        textcontent.two-way="tag.value"
+        focus.bind="tag.focus"
+        click.delegate="onTagClick(tag, 'edit')"
+        blur.trigger="onTagBlur(tag, $event)">
+      </div>
+      <span class="close-input" 
+        show.bind="!tag.editing" 
+        click.delegate="onTagClick(tag, 'delete')">x</span>
+    </div>
+  </div>
 
 </template>
