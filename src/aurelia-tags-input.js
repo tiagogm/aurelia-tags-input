@@ -1,5 +1,5 @@
 import { bindable,inject,computedFrom } from 'aurelia-framework';
-import './aurelia-tags-input.css';
+import './styles.css';
 
 export class AureliaTagsInput {
 

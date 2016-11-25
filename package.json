@@ -57,7 +57,8 @@
   "aurelia": {
     "build": {
       "resources": [
-        "aurelia-tags-input/aurelia-tags-input"
+        "aurelia-tags-input/aurelia-tags-input",
+        "aurelia-tags-input/tag-input/tag-input"
       ]
     }
   },

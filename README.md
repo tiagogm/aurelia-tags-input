@@ -1,3 +1,7 @@
+## Aurelia tags input
+
+<img src="http://i.imgur.com/PLrt8IB.png" width="400">
+
 ## Building The Code
 
 To build the code, follow these steps.
