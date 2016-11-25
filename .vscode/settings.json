@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "editor.detectIndentation": false,
+  "editor.formatOnType": true,
+  "editor.tabCompletion": true
+}

@@ -1,4 +1,3 @@
-import { bindable,inject,computedFrom } from 'aurelia-framework';
 import './styles.css';
 
 export class AureliaTagsInput {
@@ -18,50 +17,47 @@ export class AureliaTagsInput {
   }
 
   addNewTag() {
-    if(!this.tags.find(x=> x.editing)) {
-      this.addTag('',true, true);
+    if (!this.tags.find(x => x.editing)) {
+      this.addTag('', true, true);
     }
   }
 
-  addTag(value,editing = false, focus = false) {
+  addTag(value, editing = false, focus = false) {
     this.tags.push({
       value,
       editing,
       focus,
       index: this.tags.length
-    })
+    });
   }
 
   removeTag(tag) {
     let idx = this.tags.indexOf(tag);
-    if(idx > -1) {
+    if (idx > -1) {
       this.addNewTag();
-      this.tags.splice(idx,1);
+      this.tags.splice(idx, 1);
     }
   }
 
   onTagClick(tag, action) {
-    console.log('onTagClick', action,tag.value)
     tag.editing = true;
 
     if (action === 'delete') {
-      this.removeTag(tag)
+      this.removeTag(tag);
     }
   }
 
   onTagBlur(tag, e) {
-    console.log('onBlur', tag.value, e)
     let emptyTag = (!tag.value || !tag.value.length);
-    let lastTag = (this.tags.indexOf(tag) === this.tags.length -1) 
+    let lastTag = (this.tags.indexOf(tag) === this.tags.length - 1);
 
-    if(!emptyTag) {
+    if (!emptyTag) {
       tag.editing = false;
-      if(lastTag) {
+      if (lastTag) {
         this.addNewTag();
       }
-
-    }    
-    if(!lastTag && emptyTag) {
+    }
+    if (!lastTag && emptyTag) {
       this.removeTag(tag);
     }
   }
@@ -69,8 +65,7 @@ export class AureliaTagsInput {
   onTagKeyPress(tag, e) {
     let key = e.which || e.keyCode;
 
-    if (key == 13) {
-      console.log('onTagKeyPress',tag.value)
+    if (key === 13) {
       tag.editing = false;
       this.addNewTag();
       return false;
