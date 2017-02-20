@@ -2,7 +2,9 @@
 
 ### An Aurelia tags input plugin
 
-<img src="demo.gif" width="400" alt="Logo"/>
+> <img src="http://i.imgur.com/PLrt8IB.png" width="400"> 
+
+> <img src="demo.gif" width="400" alt="Logo"/>
 
 
 ### Install
