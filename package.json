@@ -1,61 +1,24 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "../aurelia-tags-input/",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "../aurelia-tags-input/",
-        "spec": "/Users/tiagomorais/Development/tmorais/aurelia-tags-input",
-        "type": "directory"
-      },
-      "/Users/tiagomorais/Development/tmorais/skeleton-typescript-webpack"
-    ]
+  "name": "aurelia-tags-input",
+  "version": "1.0.2",
+  "description": "An aurelia tags input",
+  "keywords": [
+    "aurelia",
+    "plugin",
+    "tags",
+    "input"
   ],
-  "_from": "../aurelia-tags-input",
-  "_id": "aurelia-tags-input@1.0.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/aurelia-tags-input",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "../aurelia-tags-input/",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "../aurelia-tags-input/",
-    "spec": "/Users/tiagomorais/Development/tmorais/aurelia-tags-input",
-    "type": "directory"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:../aurelia-tags-input",
-  "_shasum": "45e5cb2cade61ba3e2f18cb0e8c6031a77ba572a",
-  "_shrinkwrap": null,
-  "_spec": "../aurelia-tags-input/",
-  "_where": "/Users/tiagomorais/Development/tmorais/skeleton-typescript-webpack",
-  "aurelia": {
-    "build": {
-      "resources": [
-        "aurelia-tags-input/aurelia-tags-input",
-        "aurelia-tags-input/aurelia-tag-input"
-      ]
-    }
-  },
-  "author": {
-    "name": "Tiago Morais",
-    "email": "rpm.tiago@gmail.com",
-    "url": "http://tmorais.com/"
-  },
+  "homepage": "https://github.com/TGMorais/aurelia-tags-input",
   "bugs": {
     "url": "https://github.com/TGMorais/aurelia-tags-input/issues"
   },
-  "dependencies": {
-    "aurelia-testing": "^1.0.0-beta.2.0.1"
+  "license": "MIT",
+  "author": "Tiago Morais",
+  "main": "dist/commonjs/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TGMorais/aurelia-tags-input"
   },
-  "description": "An aurelia tags input plugin",
   "devDependencies": {
     "aurelia-tools": "^0.2.4",
     "babel-eslint": "^6.1.2",
@@ -90,8 +53,13 @@
     "vinyl-paths": "^2.1.0",
     "yargs": "^4.8.1"
   },
-  "gitHead": "7c61a6041778fe0e80d1e4bd67627ef157cd5f8a",
-  "homepage": "https://github.com/TGMorais/aurelia-tags-input",
+  "aurelia": {
+    "build": {
+      "resources": [
+        "aurelia-tags-input/aurelia-tags-input"
+      ]
+    }
+  },
   "jspm": {
     "registry": "npm",
     "main": "index",
@@ -99,28 +67,8 @@
     "directories": {
       "dist": "dist/amd"
     },
-    "dependencies": {
-      "aurelia-dependency-injection": "^1.3.0",
-      "aurelia-templating": "^1.2.0"
-    },
     "devDependencies": {
-      "aurelia-polyfills": "^1.1.1"
+      "aurelia-polyfills": "^1.0.0-beta.1.1.0"
     }
-  },
-  "keywords": [
-    "aurelia",
-    "plugin",
-    "skeleton"
-  ],
-  "license": "CC0-1.0",
-  "main": "dist/commonjs/index.js",
-  "name": "aurelia-tags-input",
-  "optionalDependencies": {},
-  "readme": "# aurelia-skeleton-plugin\n\n[![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)\n[![Join the chat at https://gitter.im/aurelia/discuss](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aurelia/discuss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nThis skeleton is part of the [Aurelia](http://www.aurelia.io/) platform. It sets up a standard aurelia plugin using gulp to build your ES6 code with the Babel compiler. Karma/Jasmine testing is also configured.\n\n> To keep up to date on [Aurelia](http://www.aurelia.io/), please visit and subscribe to [the official blog](http://blog.aurelia.io/) and [our email list](http://eepurl.com/ces50j). We also invite you to [follow us on twitter](https://twitter.com/aureliaeffect). If you have questions, please [join our community on Gitter](https://gitter.im/aurelia/discuss) or use [stack overflow](http://stackoverflow.com/search?q=aurelia). Documentation can be found [in our developer hub](http://aurelia.io/hub.html). If you would like to have deeper insight into our development process, please install the [ZenHub](https://zenhub.io) Chrome or Firefox Extension and visit any of our repository's boards.\n\n## Building The Code\n\nTo build the code, follow these steps.\n\n1. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.\n2. From the project folder, execute the following command:\n\n  ```shell\n  npm install\n  ```\n3. Ensure that [Gulp](http://gulpjs.com/) is installed. If you need to install it, use the following command:\n\n  ```shell\n  npm install -g gulp\n  ```\n4. To build the code, you can now run:\n\n  ```shell\n  gulp build\n  ```\n5. You will find the compiled code in the `dist` folder, available in three module formats: AMD, CommonJS and ES6.\n\n6. See `gulpfile.js` for other tasks related to generating the docs and linting.\n\n## Running The Tests\n\nTo run the unit tests, first ensure that you have followed the steps above in order to install all dependencies and successfully build the library. Once you have done that, proceed with these additional steps:\n\n1. Ensure that the [Karma](http://karma-runner.github.io/) CLI is installed. If you need to install it, use the following command:\n\n  ```shell\n  npm install -g karma-cli\n  ```\n2. Ensure that [jspm](http://jspm.io/) is installed. If you need to install it, use the following commnand:\n\n  ```shell\n  npm install -g jspm\n  ```\n3. Install the client-side dependencies with jspm:\n\n  ```shell\n  jspm install\n  ```\n\n4. You can now run the tests with this command:\n\n  ```shell\n  karma start\n  ```\n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TGMorais/aurelia-tags-input.git"
-  },
-  "version": "1.0.0"
+  }
 }
