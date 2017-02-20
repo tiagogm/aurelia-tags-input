@@ -24,13 +24,13 @@
 ```html
 <aurelia-tags-input
   tags.bind="tags"
-  on-change.bind="onTagsChanged">
+  on-changed.bind="onTagsChanged">
 </aurelia-tags-input>
 ```
 
 ## Optional bindable props
 - ```tags``` - array of string to render on the input as tags
-- ```on-change``` - callback function called when tags are changed
+- ```on-changed``` - callback function called when tags are changed
 
 ## Building The Code
 
