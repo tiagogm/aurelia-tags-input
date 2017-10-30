@@ -32,6 +32,28 @@
 - ```tags``` - array of string to render on the input as tags
 - ```on-changed``` - callback function called when tags are changed
 
+
+## Using aurelia-cli
+
+Add this entry to `aurelia.json` depedencies: 
+```
+{
+  "name": "aurelia-tags-input",
+  "main": "index",
+  "path": "../node_modules/aurelia-tags-input/dist/amd",
+  "resources": [
+    "aurelia-tags-input.css",
+    "aurelia-tags-input.html"
+  ]
+}
+```
+Note:
+aurelia-cli changes frequently so it's best to check the current way to do it here:
+
+   [http://aurelia.io/docs/build-systems/aurelia-cli#adding-client-libraries-to-your-project](http://aurelia.io/docs/build-systems/aurelia-c)  
+
+
+
 ## Building The Code
 
 To build the code, follow these steps.
